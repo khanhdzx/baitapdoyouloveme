@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1{
+            color: #ffe0fa;
+            text-align: center;
+            font-size: 75px;
+        }
+        body{
+            background-image: url("https://1.bp.blogspot.com/-JUFLGdb6yJU/VN7Nt7OXtsI/AAAAAAAAMFE/CwhNaK26Orc/s1600/cay%2Btinh%2Byeu%2Bhinh%2Btrai%2Btim%2Bphoto%2B(7).jpg");
+
+        }
+        button{
+            position: absolute;
+        }
+        #co{
+            top:100px;
+            left: 100px;
+            font-size: 50px;
+            color: #ff7fa5;
+            border-radius: 25px;
+        }
+        khong{
+            color: black;
+
+        }
+    </style>
+</head>
+<body>
+<h2>EM CÓ YÊU ANH KHÔNG ?</h2>
+<a href="index.html"><button id="co" onclick="bam()" >Tất nhiên là có rồi</button></a>
+<button id="khong" onmouseover="chay()" style="top: 100px; left : 900px">Có cái ĐB nhá :)))</button>
+<script>
+    function chay(){
+        let x = Math.floor(Math.random() * innerHeight)
+        let y = Math.floor(Math.random() * innerWidth)
+        document.getElementById('khong').style.top = x + 'px';
+        document.getElementById('khong').style.left = y + 'px';
+    }
+</script>
+</body>
+</html>
